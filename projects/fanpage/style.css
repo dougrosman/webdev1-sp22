@@ -1,6 +1,16 @@
 /* Write all your custom CSS below this line  */
 
+:root {
+
+}
+
 body {
     margin: 0;
 }
 
+img {
+    max-width: 500px; /* set this to the width you want */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
