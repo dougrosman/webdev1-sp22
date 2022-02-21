@@ -1,16 +1,55 @@
-/* Write all your custom CSS below this line  */
-
-:root {
-
+body {
+    background: lightblue;
+    margin: 0;
+    font-family: Arial;
 }
 
-body {
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+p {
     margin: 0;
 }
 
 img {
-    max-width: 500px; /* set this to the width you want */
     width: 100%;
     display: block;
-    margin: 0 auto;
+}
+
+header {
+    background: darkgray;
+    text-align: center;
+    padding: 1em;
+}
+
+h2 {
+    margin: .5em 0;
+}
+
+main {
+    max-width: 60ch;
+    margin: 3em auto;
+}
+
+section {
+    background: lightgreen;
+    border-left: .5em solid crimson;
+    margin: 2em 0;
+}
+
+h3 {
+    background: darkblue;
+    color: white;
+    padding: .5em;
+}
+
+section p {
+    padding: .5em;
+}
+
+footer {
+    background: darkgray;
+    text-align: center;
+    padding: 1em;
 }
