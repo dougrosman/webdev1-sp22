@@ -5,38 +5,45 @@
     transform: translate(-50%, -50%);
 }
 
-/* Loading Animation Stuff  */
+/* Loading Animation Stuff */
 
 .loading-bar-container {
-    width: 80vw;
-    height: 50vh;
-    border: .25rem solid black;
+    width: 70vw;
+    height: 40vh;
+    border: .5rem solid black;
 }
 
 .loading-bar {
     background-color: orange;
-    width: 0;
     height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: top left;
+
+    /* animation-name: load;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; */
+
     animation: load 2s forwards;
 }
 
 @keyframes load {
     to {
-        width: 100%;
+        transform: scaleX(1);
         background-color: red;
     }
 }
 
 
-/* Waiting Animation Stuff  */
+/* Waiting Animation Stuff */
 
 .waiting-circle {
-    width: 50vw;
-    height: 50vw;
-    border-top: 2em solid blue;
-    border-bottom: 2em solid red;
-    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
 
+    border-radius: 50%;
+    border-top: 2em solid red;
+    border-bottom: 2em solid blue;
     animation: wait 2s infinite linear;
 }
 
