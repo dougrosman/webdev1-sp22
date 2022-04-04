@@ -1,22 +1,47 @@
-h1 {
-    color: red;
-}
-
 .animation-container {
-    width: 50vw;
-    height: 50vh;
-    background: gray;
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-#waiting {
-    background: purple;
+/* Loading Animation Stuff  */
+
+.loading-bar-container {
+    width: 80vw;
+    height: 50vh;
+    border: .25rem solid black;
 }
 
-#loading {
-    background: orange;
+.loading-bar {
+    background-color: orange;
+    width: 0;
+    height: 100%;
+    animation: load 2s forwards;
+}
+
+@keyframes load {
+    to {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+
+/* Waiting Animation Stuff  */
+
+.waiting-circle {
+    width: 50vw;
+    height: 50vw;
+    border-top: 2em solid blue;
+    border-bottom: 2em solid red;
+    border-radius: 50%;
+
+    animation: wait 2s infinite linear;
+}
+
+@keyframes wait {
+    to {
+        transform: rotate(360deg);
+    }
 }
